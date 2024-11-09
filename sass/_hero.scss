@@ -1,0 +1,47 @@
+.hero{
+    &__card{
+        width: 250px;
+        height: 250px;
+        background: #030303;
+        padding: 80px 0;
+        margin: 0 auto;
+        margin-top: 100px;
+        border-radius: 200px 190px 10px;
+    
+    }
+    &__text{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+    }
+    &__btn{
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-size: 10px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    &__btn:active{
+        background: dodgerblue;
+        color: dodgerblue;
+    }
+    &__reset{
+        margin-top: 49px;
+        margin-left: 210px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    &__reset:active{
+        background: brown;
+        color: brown;
+    }
+}

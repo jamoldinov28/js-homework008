@@ -1,0 +1,21 @@
+body{
+    background: #8080809b;
+}
+
+                    // header
+.header{
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        &__logo{
+            width: 150px;
+        }
+        &__collection{
+            display: flex;
+            gap: 50px;
+            color: #000;
+        }
+    }
+}

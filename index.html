@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel.code</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="./assets/photo_2024-10-26_09-45-40-removebg-preview (1).png" alt="">
+            </div>
+            <ul class="navbar__collection">
+                <li class="navbar__item">
+                    <a href="#"><span>Ma'lumot</span></a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Tel:+998889990969"><span>Murojat uchun</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>      
+<main>
+    <section class="hero">
+     <div class="hero__card">
+        <div class="hero__text">
+            <h2 class="title">سبحان اللّه</h2>
+            <h1 class="counter">0</h1>
+           <div>
+            <button class="hero__btn" onclick="inc()" >.</button>
+           </div>
+            
+            <button class="hero__reset" onclick="reset()">.</button>
+        </div>
+     </div>
+    </section>
+
+    <section class="card">
+        <div class="container">
+            <div class="card__calculator">
+                <form>
+                    <div class="card__disply">
+                        <input type="text" name="display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="display.value = ''">
+
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) ">
+
+                        <input type="button" value="." onclick="display.value += '.'">
+
+                        <input type="button" value="/" onclick="display.value += '/'">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7'">
+                        <input type="button" value="8" onclick="display.value += '8'">
+                        <input type="button" value="9" onclick="display.value += '9'">
+                        <input type="button" value="*" onclick="display.value += '*'">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4'">
+
+                        <input type="button" value="5" onclick="display.value += '5'">
+
+                        <input type="button" value="6" onclick="display.value += '6'">
+
+                        <input type="button" value="-" onclick="display.value += '-'">
+
+                    </div> 
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1'">
+
+                        <input type="button" value="2" onclick="display.value += '2'">
+
+                        <input type="button" value="3" onclick="display.value += '3'">
+
+                        <input type="button" value="+" onclick="display.value += '+'">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += '00'">
+
+                        <input type="button" value="0"onclick="display.value += '0'">
+
+                        <input type="button" value="=" onclick="display.value = eval (display.value)">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
